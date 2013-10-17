@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/images/final.png"/>
+</p>
 # Introduction #
 
 An omniwheel robot created for a class project. The robot uses three omniwheels mounted in a equilateral triangle formation to move in any direction without changing its orientation. A line following component was also added to be able to demo its movement easily. The CAD files for the body design, the circuit schematics, and the code are all included. Though only the simpler PID method was tested and used for the final project, I've also included another PID function written afterwards that would need to be tested to tweak the factors before use. 
@@ -13,9 +16,13 @@ Our main reason for using these was that they were available in the lab. But we 
 
 ## Circuit ##
 
+<p align="center">
+  <img src="/images/circuit.png"/>
+</p>
+
 We wanted line sensing, but it wasn't the main objective of the project so this part was kept simple and cheap. Just a ring of LEDs and phototransistors for the line detection. The ring of 16 LED/phototransistor pairs makes the detection cheap and orientation independent. 
 We kept most of the circuit elements on the PCB on the underside of the robot where the LEDs would have to be. The phototransistors are connected to a MUX and cycled through by the PIC to read different points on the circle. The circuit was designed in EAGLE and the files are also included.
-
+Images of the schematic are attached. Can't find the Eagle files right now...
 
 ## Code ##
 
