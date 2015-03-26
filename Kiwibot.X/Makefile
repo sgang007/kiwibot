@@ -58,6 +58,10 @@ build: .build-post
 
 .build-post: .build-impl
 # Add your post 'build' code here...
+    gcc -c *.c -o build/main.o
+
+.build-impl:
+		$(MKDIR) build
 
 
 # clean
